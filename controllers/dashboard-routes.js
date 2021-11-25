@@ -13,7 +13,7 @@ router.get('/', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'post_url',
+      'body',
       'title',
       'created_at',
     ],
@@ -46,8 +46,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       'id',
-      'post_url',
       'title',
+      'body',
       'created_at',
     ],
     include: [
@@ -68,7 +68,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
     .then(dbPostData => {
       if (dbPostData) {
         const post = dbPostData.get({ plain: true });
-        
         res.render('edit-post', {
           post,
           loggedIn: true
