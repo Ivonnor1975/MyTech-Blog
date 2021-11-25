@@ -18,6 +18,7 @@ Comment.init(
         len: [1]
       }
     },
+    //the followind fields are create by sequilize durong tables associations
     // user_id: {
     //   type: DataTypes.INTEGER,
     //   references: {

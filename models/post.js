@@ -24,12 +24,8 @@ Post.init(
         notEmpty: true,
       }
     },
-    date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,         // value at creation will be current datetime
-    },
-    // user_id: {
+    
+    // user_id: {  it is create when table associations are done by sequiliza
     //   type: DataTypes.INTEGER,  // this is a foreign key which references User.id 
     //   references: {
     //     model: 'user',
