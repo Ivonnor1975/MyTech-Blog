@@ -8,12 +8,11 @@ async function loginFormHandler(event) {
     const response = await fetch('/api/users/login', {
       method: 'post',
       body: JSON.stringify({
-        email,
+        username,
         password
       }),
       headers: { 'Content-Type': 'application/json' }
     });
-
     if (response.ok) {
       document.location.replace('/dashboard/');
     } else {
@@ -27,18 +26,19 @@ async function signupFormHandler(event) {
 
   const username = document.querySelector('#username-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-
+  console.log('tracking signup')
   if (username && password) {
     const response = await fetch('/api/users', {
-      method: 'post',
+      method: 'Post',
       body: JSON.stringify({
         username,
         password
       }),
       headers: { 'Content-Type': 'application/json' }
     });
-
+    console.log(response);
     if (response.ok) {
+      console.log('success')
       document.location.replace('/dashboard/');
     } else {
       alert(response.statusText);
