@@ -1,9 +1,9 @@
-<article class="post">
-  <div class="title">
-    <span>{{title}} {{format_date created_at}}</span>
+<div class="card">
+   <div class="card-header">
+      <p>{{title}} by {{user.username}} on {{format_date created_at}}</p>
+   </div>
+   <div class="card-body">
+      {{body}}
+      <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>
-  <div class="meta">
-    <span>{{body}} by {{username}} </span>
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div>
-</article>
+</div>
