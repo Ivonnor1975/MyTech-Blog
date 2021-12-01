@@ -71,6 +71,20 @@ p {
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
+.btnp {
+  font-size: 1.3rem;
+  text-decoration:none;
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--tertiary);
+  transform: translate(-1px, -1px);
+}
 
  .btn:hover {
   color: var(--primary);
@@ -78,9 +92,21 @@ p {
   transform: translate(0, 0);
   box-shadow: 2px 2px var(--dark);
 }
+.btnp:hover {
+  color: var(--primary);
+  background-color: var(--light-dark);
+  transform: translate(0, 0);
+}
+
 
 .btn-inline {
   display: inline;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .btn-back {
