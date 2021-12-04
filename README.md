@@ -29,6 +29,9 @@ Run node server.js to create the server and be able to access in local host port
 ## Usage
 This project is used to search and post. Developers can publish their blog posts and comment on other developers’ posts as well.
 
+![image](https://user-images.githubusercontent.com/88918693/144714170-50249c62-e267-4a2f-b623-35570c7bb099.png)
+
+
 ## License
 This project is licensed under the MIT
 
