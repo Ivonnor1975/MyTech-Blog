@@ -1,6 +1,7 @@
 # MyTech-Blog
 
 ## Description
+Thid is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
 ![License](https://img.shields.io/badge/license-MIT-Blue.svg)
 ## Table of Contents
@@ -11,18 +12,22 @@
   * [test](#test)
 
 ## Installation
-This application uses node.js, express, mysql2,sequelize, and dotenv modules
+This application uses node.js, express, mysql2,sequelize, and dotenv modules. To install necessary dependecies, run the following commands:
 
-To install necessary dependecies, run the following commands:
 
-npm init
-npm install express sequelize mysql2
+Clone the Repository
+npm install mysql2
 npm install dotenv
+Create .env file with proper credentials
 npm install bcrypt
 npm install express-handlebars
-npm i express-session connect-session-sequelize
+npm install connect-session-sequelize
+Access mySQL Terminal and run source db/schema.sql to create the database. Exit mySQL terminal after successful creation.
+Run node seeds/index.js to create the tables and seed with placeholder data.
+Run node server.js to create the server and be able to access in local host port.
 
 ## Usage
+This project is used to search and post. Developers can publish their blog posts and comment on other developers’ posts as well.
 
 ## License
 This project is licensed under the MIT
@@ -30,4 +35,4 @@ This project is licensed under the MIT
 Link: https://opensource.org/licenses/MIT
 
 # Test
-There is not test in this project.
+This product can be tested through the demo link.
